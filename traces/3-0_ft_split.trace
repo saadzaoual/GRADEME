@@ -1,0 +1,19 @@
+----------------8<-------------[ START TEST 
+        💻 TEST
+./a.out "three words apart"         🔎 YOUR OUTPUT:
+../../rendu/ft_split/ft_split.c: In function ‘fill_words’:
+../../rendu/ft_split/ft_split.c:37:23: warning: implicit declaration of function ‘word_dope’; did you mean ‘word_dupe’? [-Wimplicit-function-declaration]
+   37 |     arr[word_index] = word_dope(str);
+      |                       ^~~~~~~~~
+      |                       word_dupe
+../../rendu/ft_split/ft_split.c:37:21: warning: assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   37 |     arr[word_index] = word_dope(str);
+      |                     ^
+/usr/bin/ld: /tmp/ccFaM8EZ.o: in function `main':
+main.c:(.text+0x0): multiple definition of `main'; /tmp/cckLhMey.o:ft_split.c:(.text+0x372): first defined here
+/usr/bin/ld: /tmp/cckLhMey.o: in function `fill_words':
+ft_split.c:(.text+0x14a): undefined reference to `word_dope'
+collect2: error: ld returned 1 exit status
+
+        ❌ COMPILATION ERROR
+----------------8<------------- END TEST ]
